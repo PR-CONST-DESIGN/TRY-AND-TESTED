@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALKTHROUGH</title>
+    <link rel="stylesheet" href="style-ami.css">
+</head>
+<body>
+    <h3 class="heading"> WALKTHROUGH GALLERY</h3>
+    <div class="container">
+       <div class="main-video">
+        <div class="video">
+            <video src="images/walkthrough/VID1.mp4" controls muted autoplay></video>
+            <h3 class="title"> 01. Pawan House 2 Storey Building </h3>
+        </div>
+       </div>
+
+       <div class="video-list">
+        
+        <div class="vid active">
+            <video src="images/walkthrough/VID1.mp4"></video>
+            <h3 class="title"> 01. Pawan House 2 Storey Building </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID2.mp4"></video>
+            <h3 class="title"> 02. Cafe House Desgin </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID3.mp4"></video>
+            <h3 class="title"> 03. Residential House </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID5.mp4"></video>
+            <h3 class="title"> 04. Kitchen Design </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID6.mp4"></video>
+            <h3 class="title"> 05. Office Interior Design </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID7.mp4"></video>
+            <h3 class="title"> 06. Toilet </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID8.mp4"></video>
+            <h3 class="title"> 07. Interior of House </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID9.mp4"></video>
+            <h3 class="title"> 08. Night Club Design </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID10.mp4"></video>
+            <h3 class="title"> 09. Office Cabin  </h3>
+        </div>
+
+        <!-- <div class="vid">
+            <video src="images/walkthrough/VID11.mp4"></video>
+            <h3 class="title"> 01. xyz video </h3>
+        </div>
+
+        <div class="vid">
+            <video src="images/walkthrough/VID12.mp4"></video>
+            <h3 class="title"> 01. xyz video </h3>
+        </div> -->
+
+
+
+
+       </div>
+
+    </div>
+    <SCript>
+
+        let listvideo = document.querySelectorAll('.video-list .vid');
+        let mainvideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listvideo.forEach(video =>{
+            video.onclick = () =>{
+                listvideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainvideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                }
+            };
+        });
+    </SCript>
+</body>
+</html>

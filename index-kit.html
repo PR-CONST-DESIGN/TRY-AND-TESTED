@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KITCHEN</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style-int-1.css">
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+      >
+</head>
+<body>
+    <div class="full-img" id="imgfullbox">
+        <img src="images/bed room/bed-2.jpg" id="imgfull">
+        <span onclick="closeimgfull()">X</span>
+    </div>
+    <div class="main-title"> <p>KITCHEN</p></div>
+    <DIV class="img-gallery">
+      <div class="dream">
+        <img src="images/kitchen/kit1.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit2.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit3.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit4.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit15.jpg" alt="" onclick="openimgfull(this.src)">
+      </div>
+      <div class="dream">
+        <img src="images/kitchen/kit5.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit6.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit7.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit8.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit9.jpg" alt="" onclick="openimgfull(this.src)">
+      </div>
+      <div class="dream">
+        <img src="images/kitchen/kit10.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit11.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit12.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit13.jpg" alt="" onclick="openimgfull(this.src)">
+        <img src="images/kitchen/kit14.jpg" alt="" onclick="openimgfull(this.src)">
+      </div>
+    </DIV>
+
+    <script>
+
+        var imgfullbox = document.getElementById("imgfullbox");
+        var imgfull = document.getElementById("imgfull");
+
+        function openimgfull(images){
+            imgfullbox.style.display = "flex";
+            imgfull.src = images;
+        }
+        function closeimgfull(){
+          imgfullbox.style.display = "none";
+        }
+       
+    </script>
+</body>
+</html>

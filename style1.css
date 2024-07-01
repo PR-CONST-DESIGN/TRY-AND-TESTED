@@ -1,0 +1,49 @@
+//SKILLS--------------------
+.progress-wrap{
+	width: 100%;
+	margin-bottom: 30px;
+	h3{
+		font-size: 20px;
+		margin-bottom: 10px;
+		font-weight: 500;
+
+	}
+}
+//PROGRESS BAR
+.progress{
+	height: 10px;
+	box-shadow: none;
+	background: lighten($black,10%);
+	overflow: visible;
+}
+.progress-bar{
+	background: $primary;
+	box-shadow: none;
+	font-size: 12px;
+	line-height: 1.2;
+	color: $black;
+	font-weight: 600;
+	position: relative;
+	overflow: visible;
+	@include border-radius(2px);
+	&:after{
+		position: absolute;
+		top: -2px;
+		right: 0;
+		width: 34px;
+		height: 34px;
+		content: '';
+		background: $primary;
+		@include border-radius(2px);
+		opacity: 0;
+	}
+	span{
+		position: absolute;
+		top: -38px;
+		right: 0;
+		font-size: 20px;
+		font-weight: 400;
+		color: $white;
+	}
+}
+

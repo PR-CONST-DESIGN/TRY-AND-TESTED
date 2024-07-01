@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: white;
+}
+.container{
+    padding: 10px 5%;
+}
+
+#portfolio{
+    padding: 50px 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    
+}
+.main-title{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: 40%; */
+    /* margin: 30px 35%; */
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 8vh;
+    background: #474763;
+}
+.sub-title{
+    padding: 40px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 40px;
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+.work-list:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.work-1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-2{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-3{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-1 img{
+    width: 100%;
+    /* height: 100% */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    /* margin-bottom: 10px; */
+}
+.work-2 img{
+    width: 100%;
+    /* height: 100% */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    /* margin-bottom: 10px; */
+}
+.work-3 img{
+    width: 100%;
+    /* height: 100% */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    /* margin-bottom: 10px; */
+}
+.container .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.container .layer h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.container .layer a{
+    margin-top: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: height 0.10s;
+}
+.work-1:hover img{
+    transform: scale(1.1);
+}
+.work-2:hover img{
+    transform: scale(1.1);
+}
+.work-3:hover img{
+    transform: scale(1.1);
+}
+.work-1:hover .layer{
+    height: 100%;
+}
+.work-2:hover .layer{
+    height: 100%;
+}
+.work-3:hover .layer{
+    height: 100%;
+}
+.container .sub-title:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/* ---------css for small screen--------- */
+@media only screen and (max-width: 600px),(max-width: 768px),(max-width: 800px){
+    .main-title{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10%;
+        /* margin: 30px 40%; */
+        font-size: 40px;
+        margin-top: 3%;
+        box-sizing: border-box;
+        width: 80%;
+        height: 6vh;
+        background: #474763;
+    }
+}
+@media only screen and (max-width: 414px),(max-width: 430px),(max-width: 412px){
+    .main-title{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10%;
+        /* margin: 30px 40%; */
+        font-size: 30px;
+        margin-top: 3%;
+        box-sizing: border-box;
+        width: 80%;
+        height: 5vh;
+        background: #474763;
+    }
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 40px;
+        margin-top: 0;
+        margin-bottom: 4%;
+    }
+}
+@media only screen and (max-width: 375px),(max-width: 390px),(max-width: 360px){
+    .main-title{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10%;
+        /* margin: 30px 40%; */
+        font-size: 25px;
+        margin-top: 3%;
+        box-sizing: border-box;
+        width: 80%;
+        height: 5vh;
+        background: #474763;
+    }
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 40px;
+        margin-top: 0;
+        margin-bottom: 4%;
+    }
+}
